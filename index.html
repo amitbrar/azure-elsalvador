@@ -1,0 +1,437 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Somos Río Lempa Bank Lending</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+<style>
+/* Layout: one reading column that opens into wider figure plates; chapters separated by a drawn river line */
+:root{
+  --bg:#f5f8f8;        /* pale river-stone */
+  --paper:#ffffff;     /* figure plates */
+  --ink:#14303a;       /* deep basin water */
+  --soft:#5b7079;      /* captions, quiet text */
+  --rule:#d9e3e5;
+  --river:#1d6c86;     /* accent: the Lempa */
+  --direct:#c9d5d8;    /* direct lending, light */
+  --pri:#d9822b;       /* private WSPs */
+  --mun:#3f8f5b;       /* municipal */
+  --com:#2f6db3;       /* community */
+  --hand:#b24a2e;      /* handwritten notes */
+  --crs:#e3eef6; --srl:#e6f1e8;
+  --f-disp:"Public Sans",system-ui,sans-serif;
+  --f-body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-hand:"Caveat","Comic Sans MS","Segoe Print",cursive;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0f1d22;--paper:#152830;--ink:#e4eef0;--soft:#9cb1b8;--rule:#27404a;--river:#5fb3cf;--direct:#3d5560;
+  --pri:#e79a4c;--mun:#5fb07a;--com:#5c97dc;--hand:#f08a6a;--crs:#1c3446;--srl:#1d3a2a;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1d22;--paper:#152830;--ink:#e4eef0;--soft:#9cb1b8;--rule:#27404a;--river:#5fb3cf;--direct:#3d5560;
+  --pri:#e79a4c;--mun:#5fb07a;--com:#5c97dc;--hand:#f08a6a;--crs:#1c3446;--srl:#1d3a2a;color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.6;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:1040px;margin:0 auto;padding-block:56px 96px}
+.col{max-width:680px}
+h1,h2,h3{font-family:var(--f-disp);font-weight:700;text-wrap:balance;margin:0;letter-spacing:-.01em}
+h1{font-size:clamp(30px,4.4vw,44px);line-height:1.15;max-width:22ch}
+h2{font-size:clamp(22px,2.8vw,28px);line-height:1.25}
+h3{font-size:19px;line-height:1.3}
+p{margin:0}
+.kicker{font-size:13px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--river)}
+.lede{font-size:20px;line-height:1.55;color:var(--ink)}
+.quiet{color:var(--soft)}
+.hand{font-family:var(--f-hand);color:var(--hand)}
+
+/* opening */
+header.open{display:grid;gap:22px;padding-bottom:12px}
+.facts{display:flex;flex-wrap:wrap;gap:18px 48px;margin-top:18px}
+.fact b{display:block;font-size:28px;line-height:1.1;font-weight:700;color:var(--ink);font-variant-numeric:tabular-nums}
+.fact span{font-size:15px;color:var(--soft)}
+
+/* chapters */
+.chapter{display:grid;gap:24px;margin-top:72px;padding-top:40px;border-top:1px solid var(--rule)}
+.chapter>.col{display:grid;gap:14px}
+.river{display:block;width:100%;height:46px;margin:64px 0 40px;color:var(--rule)}
+
+/* figure plates */
+figure{margin:0;background:var(--paper);border:1px solid var(--rule);border-radius:14px;padding:26px 26px 20px;display:grid;gap:14px;min-width:0}
+figure h3{font-size:18px}
+figcaption{font-size:14px;color:var(--soft);max-width:70ch}
+.plates{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:28px}
+@media (max-width:820px){.plates{grid-template-columns:1fr}}
+.chart{width:100%;min-width:0}
+.chart svg{display:block;width:100%;height:auto;overflow:visible}
+.chart text{font-family:var(--f-body);fill:var(--ink);font-size:12px}
+.chart .q{fill:var(--soft)}
+.chart .b{font-weight:700}
+.chart .h{font-family:var(--f-hand);fill:var(--hand);font-size:19px}
+.key{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13px;color:var(--soft)}
+.key i{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+
+/* what it takes */
+.takes{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:start}
+.bands{display:grid;border-bottom:1px solid var(--ink)}
+.band{display:grid;grid-template-columns:230px minmax(0,1fr);gap:28px;padding:22px 0;border-top:1px solid var(--ink)}
+.band h3{font-size:20px;line-height:1.25;padding-top:8px;color:var(--river)}
+.cells.two{display:grid;gap:18px}
+.cells .sub{margin:8px 0 0;font-size:15px;font-weight:700;color:var(--ink);letter-spacing:0;text-transform:none}
+ul.tiles{list-style:none;margin:0;padding:0}
+ul.tiles li{padding:11px 0;border-bottom:1px solid var(--rule);font-weight:400;line-height:1.4}
+ul.tiles li:last-child{border-bottom:none}
+ul.tiles li span{color:var(--soft)}
+.cells.two ul.tiles{padding-left:16px;border-left:2px solid var(--rule);margin-top:4px}
+@media (max-width:900px){.band{grid-template-columns:1fr;gap:8px}}
+@media (max-width:820px){.takes{grid-template-columns:1fr}}
+.stack{display:grid;gap:28px}
+.group h3{padding-bottom:10px;border-bottom:1px solid var(--ink)}
+.sub{font-size:13px;font-weight:700;color:var(--soft);letter-spacing:.06em;text-transform:uppercase;margin-top:8px}
+ul.items{list-style:none;margin:0;padding:0}
+ul.items li{padding:13px 0;border-bottom:1px solid var(--rule);font-weight:600;line-height:1.4}
+ul.items li span{font-weight:400;color:var(--soft)}
+
+/* tables */
+.scroll{overflow-x:auto;min-width:0}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
+th,td{text-align:left;vertical-align:top;padding:12px 10px;border-bottom:1px solid var(--rule)}
+thead th{font-size:13px;color:var(--soft);font-weight:600;border-bottom:1px solid var(--ink)}
+tbody th{font-weight:600;line-height:1.4}
+th .pg,td .pg{font-weight:400;color:var(--soft)}
+tr.grp th{font-size:15px;padding-top:22px;border-bottom:1px solid var(--ink)}
+.who{display:inline-block;padding:1px 10px;border-radius:6px;font-size:13px;font-weight:700}
+.who.crs{background:var(--crs)} .who.srl{background:var(--srl)}
+#who{min-width:560px}
+#cost{min-width:680px;table-layout:fixed}
+#cost td small{display:block;font-size:12.5px;color:var(--soft);margin-top:2px}
+#cost td.tot,#cost th.tot{text-align:right;white-space:nowrap}
+#cost tr.vol td,#cost tr.vol th{background:color-mix(in srgb,var(--river) 7%,transparent)}
+#cost tr.xh th{font-size:13px;color:var(--soft);font-weight:600;padding-top:18px}
+#cost tfoot th,#cost tfoot td{border-bottom:none;padding-top:14px}
+#cost tfoot tr.sum th,#cost tfoot tr.sum td{border-top:2px solid var(--ink);font-weight:700}
+.pct{font-size:12px;color:var(--soft);font-weight:400;margin-left:6px}
+/* phone: tables reflow instead of scrolling sideways */
+@media (max-width:640px){
+  #who,#cost{min-width:0}
+  #who,#who tbody,#cost,#cost thead,#cost tbody,#cost tfoot{display:block}
+  #who thead{display:none}
+  #who tr,#cost tr{display:grid;border-bottom:1px solid var(--rule)}
+  #who th,#who td,#cost th,#cost td{border:none}
+  #who tr{grid-template-columns:1fr auto;column-gap:10px}
+  #who tbody th{grid-column:1/-1;padding:12px 0 2px}
+  #who td{padding:2px 0 12px}
+  #who tr.grp{border-bottom:1px solid var(--ink)}
+  #who tr.grp th{padding:20px 0 8px}
+  #cost tr{grid-template-columns:repeat(4,minmax(0,1fr));column-gap:8px}
+  #cost tr>th:first-child{grid-column:1/-1;padding:12px 0 4px}
+  #cost thead tr>th:first-child{display:none}
+  #cost thead tr{border-bottom:1px solid var(--ink)}
+  #cost thead th{padding:8px 0}
+  #cost td{padding:2px 0 12px;font-size:14px;overflow-wrap:anywhere}
+  #cost td small{font-size:11.5px}
+  #cost td[colspan="3"]{grid-column:span 3}
+  #cost th.tot{text-align:right}
+  #cost td.tot{white-space:normal}
+  #cost tr.xh{border-bottom:none}
+  #cost tr.vol{background:color-mix(in srgb,var(--river) 7%,transparent)}
+  #cost tr.vol td,#cost tr.vol th{background:none}
+  #cost tfoot tr.sum{border-top:2px solid var(--ink)}
+  #cost tfoot tr.sum th,#cost tfoot tr.sum td{border-top:none}
+  #cost .grand{font-size:16px}
+  #cost .pct{display:block;margin-left:0}
+}
+.grand{font-size:18px}
+#cost th small.gnote{display:block;font-size:13px;color:var(--river);font-weight:400;font-style:italic;margin-top:6px;line-height:1.35}
+.recyc{font-weight:600;color:var(--river);margin-top:4px}
+ul.tiles.insights{list-style:disc;padding-left:22px;max-width:820px}
+ul.tiles.insights li{padding:6px 0;border:none}
+ul.tiles.insights li::marker{color:var(--river)}
+.qref{font-size:14px;font-weight:600;white-space:nowrap;margin-left:4px}
+ol.qs li:target{background:color-mix(in srgb,var(--river) 8%,transparent)}
+html{scroll-behavior:smooth}
+#cost td.na{font-style:italic;font-size:13.5px;color:var(--soft);line-height:1.35}
+/* tables share the "What it takes" style: no panel, teal bold groups, regular items */
+figure.tbl{background:none;border:none;border-radius:0;padding:0}
+figure.tbl h3{color:var(--river);font-size:20px}
+#who,#cost{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)}
+#who tbody th,#cost tbody th{font-weight:400}
+#who tr.grp th{color:var(--river);font-size:17px;font-weight:700;border-bottom:1px solid var(--rule)}
+#cost tr.xh th{color:var(--river);font-size:17px;font-weight:700;padding-top:22px;border-bottom:1px solid var(--rule)}
+#cost tr.vol td,#cost tr.vol th{background:none}
+#cost tr.vol th{font-weight:700}
+.who{background:none !important;padding:0;font-size:15px;color:var(--river)}
+.who.crs{color:var(--com)}
+.who.srl{color:var(--pri)}
+#cost tfoot tr.sum th{color:var(--river)}
+@media (max-width:640px){#cost tr.vol{background:none}#cost tr.xh{border-bottom:1px solid var(--rule)}}
+
+/* questions */
+ol.qs{list-style:none;margin:0;padding:0;counter-reset:q;display:grid}
+ol.qs li{counter-increment:q;display:grid;grid-template-columns:40px 1fr;gap:6px;padding:18px 0;border-bottom:1px solid var(--rule)}
+ol.qs li::before{content:counter(q) ".";font-weight:700;color:var(--soft)}
+ol.qs b{display:block;font-size:18px}
+ol.qs span{color:var(--soft)}
+footer{margin-top:72px;font-size:13px;color:var(--soft)}
+a{color:var(--river)}
+:focus-visible{outline:2px solid var(--river);outline-offset:2px}
+</style>
+
+<div class="wrap">
+
+<header class="open">
+  <p class="quiet">Azure Source Capital · El Salvador</p>
+  <h1>Using Somos Río Lempa funds to grow bank lending for water in the Lempa basin</h1>
+</header>
+
+<section class="chapter" id="banks">
+  <div class="col">
+    <h2>Banks already lend to water in El Salvador: 85% of ASC’s $13.3 mil disbursed since 2019 (32 of 39 loans)</h2>
+    <p class="quiet">Banks lent in every year, and to all three kinds of water service provider.</p>
+  </div>
+  <div class="plates">
+    <figure>
+      <h3>Bank and direct lending by year</h3>
+      <div class="key"><span><i style="background:var(--river)"></i>Through banks</span><span><i style="background:var(--direct)"></i>Direct from ASC</span></div>
+      <div class="chart" id="c-year" role="img" aria-label="Column chart of ASC lending by year, 2019 to 2025, split between banks and direct, with a total column"></div>
+      <figcaption>El Salvador loans only, from ASC’s disbursement file.</figcaption>
+    </figure>
+    <figure>
+      <h3>Bank lending by segment</h3>
+      <div class="chart" id="c-seg" role="img" aria-label="Bar chart of bank lending by segment: private, community, municipal and all segments"></div>
+    </figure>
+  </div>
+</section>
+
+<section class="chapter" id="takes">
+  <div class="col">
+    <h2>What it will take to increase ASC lending to El Salvador…</h2>
+  </div>
+  <div class="bands">
+    <div class="band">
+      <h3>…technical assistance</h3>
+      <div class="cells two">
+        <div><p class="sub">To WSPs</p>
+          <ul class="tiles">
+            <li>TA for engineering and project design</li>
+            <li>TA to strengthen revenue streams <span>(metering, setting tariffs)</span>, accounting and financial systems</li>
+            <li>TA to improve governance</li>
+          </ul></div>
+        <div><p class="sub">To banks</p>
+          <ul class="tiles"><li>TA for underwriting water sector loans</li></ul></div>
+      </div>
+    </div>
+    <div class="band">
+      <h3>…financial incentives to banks</h3>
+      <ul class="tiles row">
+        <li>Lower cost of financing from ASC <span>(2&#8209;3% lower rates)</span></li>
+        <li>Disbursement linked incentives <span>(Aceli model)</span></li>
+        <li>First loss cover (FLC) <span>(as collateral substitute)</span></li>
+      </ul>
+    </div>
+    <div class="band">
+      <h3>…process changes and improvements</h3>
+      <ul class="tiles">
+        <li>Lending through ASC subsidiary instead of Fideagua <span>(gives ASC more control over the process, is more tax efficient, and avoids the cupo, the per-bank exposure limit in the Fideagua reglamento)</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="chapter" id="who-pays">
+  <div class="col">
+    <h2>What will it cost, and who pays for it</h2>
+    <p class="quiet">CRS pays for technical assistance to water service providers. Somos Río Lempa (SRL) pays for TA and financial incentives to banks.</p>
+  </div>
+  <figure class="tbl">
+    <div class="scroll"><table id="who">
+      <thead><tr><th style="width:46%"></th><th>Indicative cost</th><th>Who pays</th></tr></thead>
+      <tbody>
+        <tr class="grp"><th colspan="3">Technical assistance to WSPs</th></tr>
+        <tr><th>TA for engineering and project design</th><td>$5k to $20k per loan</td><td><span class="who crs">CRS</span></td></tr>
+        <tr><th>TA to strengthen revenue streams <span class="pg">(metering, setting tariffs)</span>, accounting and financial systems</th><td>$2k to $5k per loan</td><td><span class="who crs">CRS</span></td></tr>
+        <tr><th>TA to improve governance</th><td class="quiet">To be estimated</td><td><span class="who crs">CRS</span></td></tr>
+        <tr class="grp"><th colspan="3">Technical assistance to banks</th></tr>
+        <tr><th>TA for underwriting water sector loans</th><td>$10k per bank</td><td><span class="who srl">SRL</span></td></tr>
+        <tr class="grp"><th colspan="3">Financial incentives to banks</th></tr>
+        <tr><th>Disbursement linked incentives <span class="pg">(Aceli model)</span></th><td>Up to 10% of the loan amount</td><td><span class="who srl">SRL</span></td></tr>
+        <tr><th>First loss cover (FLC) <span class="pg">(as collateral substitute)</span></th><td>10&#8209;15% first loss on the loan amount</td><td><span class="who srl">SRL</span></td></tr>
+      </tbody>
+    </table></div>
+  </figure>
+</section>
+
+<section class="chapter" id="cost-to-srl">
+  <div class="col">
+    <h2 id="h-cost">What is the cost to disburse $7.2M over the next 12-18 months in the Lempa basin?</h2>
+    <p class="quiet" id="p-cost"></p>
+  </div>
+  <figure>
+    <h3>Where the SRL money goes</h3>
+    <div class="chart" id="c-cost" role="img" aria-label="Stacked bar showing the cost to SRL split into first loss cover, financial incentives, TA to banks and interest income loss"></div>
+  </figure>
+  <figure class="tbl">
+    <h3>Cost to SRL</h3>
+    <div class="scroll"><table id="cost"></table></div>
+    <p class="recyc" id="cap-cost"></p>
+    <figcaption>Average loan sizes are El Salvador bank loans since 2019. Loan counts, FLC and incentive levels are Azure team estimates.</figcaption>
+  </figure>
+</section>
+
+<section class="chapter" id="diagnostic">
+  <div class="col">
+    <h2>Key insights from the Social Finance Diagnostic Report</h2>
+  </div>
+  <ul class="tiles insights">
+    <li>Banks have plenty of cheap money: half the FIs interviewed report high liquidity, and some fund themselves at around 3&#8209;5%, below ASC’s 7&#8209;8.5%</li>
+    <li>Banks rely on Azure to find deals: only 4 of 37 indirect loans came from a bank’s own pipeline</li>
+    <li>Banks lack water sector know-how and no TA builds it today; Banco Hipotecario named this as a key constraint</li>
+    <li>Private WSPs have collateral; community WSPs often don’t, which makes lending to them harder</li>
+    <li>SRL grants of up to $100k per community WSP may reduce their appetite for loans. Options: matching grants, or loans once a WSP reaches the grant ceiling</li>
+  </ul>
+</section>
+
+<section class="chapter" id="next">
+  <div class="col">
+    <h2>Key questions and next steps</h2>
+    <ol class="qs">
+      <li id="q1"><div><b>Choosing banks</b><span>Which banks to start with, for which segments, and what each needs before it says yes.</span></div></li>
+      <li id="q2"><div><b>Designing financial incentives</b><span>How SRL covers ASC’s lost margin on lower rates, since the margin is only about 1.1% today.</span></div></li>
+      <li id="q3"><div><b>FLC mechanism</b><span>First-loss level and who holds the money.</span></div></li>
+      <li id="q4"><div><b>Pipeline for municipal and community loans</b><span>List ready deals and estimate market size in each segment.</span></div></li>
+      <li id="q5"><div><b>SRL grants and loans to community WSPs</b></div></li>
+      <li id="q7"><div><b>Lending from ASC subsidiary to banks</b><span>Are all regulatory requirements met? Confirm licensing, tax and supervisory rules.</span></div></li>
+      <li id="q8"><div><b>TA needed for banks</b><span>What loan origination and underwriting support each bank needs, and what it costs.</span></div></li>
+    </ol>
+  </div>
+</section>
+
+<footer>Azure Source Capital · Confidential working draft · El Salvador loan data only</footer>
+</div>
+
+<script>
+/* ---------- data: El Salvador loans, ASC disbursement file ---------- */
+const YRS=[2019,2020,2021,2022,2023,2024,2025];
+const BANK=[486134,1732309,3731000,1074000,50000,545000,3606000];
+const DIRECT=[0,0,0,0,0,1594000,450900];
+const SEG=[ // bank loans by segment: loans, amount, average
+  {k:'P',name:'Private',n:10,v:8977045,c:'--pri'},
+  {k:'C',name:'Community',n:18,v:1373089,c:'--com'},
+  {k:'M',name:'Municipal',n:4,v:874309,c:'--mun'}];
+const AVG={P:897704.5,M:218577.25,C:76282.72};
+/* ---------- cost plan (Azure team, 23 Nov 2026) ---------- */
+const PLAN={n:{P:5,M:5,C:10},guar:{P:0,M:10,C:15},inc:{P:3,M:6,C:9},banks:4,perBank:10000,iloss:1.5};
+
+const $=id=>document.getElementById(id);
+const cv=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const NS='http://www.w3.org/2000/svg';
+function el(p,t,a,txt){const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);if(txt!=null)e.textContent=txt;p.appendChild(e);return e;}
+function svg(w,h){const s=document.createElementNS(NS,'svg');s.setAttribute('viewBox',`0 0 ${w} ${h}`);return s;}
+const m1=v=>v>=1e6?'$'+(v/1e6).toFixed(1)+'M':v>=1e3?'$'+Math.round(v/1e3)+'k':'$'+Math.round(v);
+const k1=v=>v>=1e6?'$'+(v/1e6).toFixed(1)+'M':v<1e4?'$'+(v/1e3).toFixed(1).replace(/\.0$/,'')+'k':'$'+Math.round(v/1e3)+'k';
+// rounded-top bar, slightly hand-cut: top corners only
+function bar(p,x,y,w,h,fill,r=5){ if(h<=0)return; r=Math.min(r,h,w/2);
+  el(p,'path',{d:`M${x} ${y+h} V${y+r} Q${x} ${y} ${x+r} ${y} H${x+w-r} Q${x+w} ${y} ${x+w} ${y+r} V${y+h} Z`,fill});}
+function hbar(p,x,y,w,h,fill,r=5){ if(w<=0)return; r=Math.min(r,h/2,w);
+  el(p,'path',{d:`M${x} ${y} H${x+w-r} Q${x+w} ${y} ${x+w} ${y+r} V${y+h-r} Q${x+w} ${y+h} ${x+w-r} ${y+h} H${x} Z`,fill});}
+// handwritten note with a curved arrow
+function note(s,tx,ty,txt,ax,ay,anchor='start'){
+  el(s,'text',{x:tx,y:ty,class:'h','text-anchor':anchor},txt);
+  const sx=anchor==='end'?tx-4:anchor==='middle'?tx:tx+4, sy=ty+6, mx=(sx+ax)/2+(ay>sy?-18:18), my=(sy+ay)/2;
+  el(s,'path',{d:`M${sx} ${sy} Q${mx} ${my} ${ax} ${ay}`,fill:'none',stroke:cv('--hand'),'stroke-width':1.6,'stroke-linecap':'round'});
+  const ang=Math.atan2(ay-my,ax-mx), L=7;
+  el(s,'path',{d:`M${ax-L*Math.cos(ang-0.45)} ${ay-L*Math.sin(ang-0.45)} L${ax} ${ay} L${ax-L*Math.cos(ang+0.45)} ${ay-L*Math.sin(ang+0.45)}`,fill:'none',stroke:cv('--hand'),'stroke-width':1.6,'stroke-linecap':'round','stroke-linejoin':'round'});
+}
+
+function drawYear(){
+  const host=$('c-year'), W=Math.max(300,host.clientWidth), sm=W<480, H=300, T=34, B=30, L=4, R=4, TW=sm?64:92, PW=W-L-R-TW, s=svg(W,H);
+  const tot=YRS.map((_,i)=>BANK[i]+DIRECT[i]), mx=4.2e6, ph=H-T-B, sc=ph/mx, gw=PW/YRS.length, bw=Math.min(34,gw-12);
+  el(s,'line',{x1:L,x2:L+PW,y1:T+ph,y2:T+ph,stroke:cv('--rule')});
+  YRS.forEach((y,i)=>{const cx=L+gw*(i+.5), hb=BANK[i]*sc, hd=DIRECT[i]*sc;
+    bar(s,cx-bw/2,T+ph-hb-hd,bw,hd,cv('--direct'));
+    if(hd>0) el(s,'rect',{x:cx-bw/2,y:T+ph-hb-1.5,width:bw,height:1.5,fill:cv('--paper')});
+    bar(s,cx-bw/2,T+ph-hb,bw,hb,cv('--river'),hd>0?0:5);
+    el(s,'text',{x:cx,y:T+ph-hb-hd-7,'text-anchor':'middle',class:'b','font-size':sm?10:12},m1(tot[i]));
+    el(s,'text',{x:cx,y:H-8,'text-anchor':'middle',class:'q'},sm?"'"+String(y).slice(2):y);});
+  // total column on its own scale
+  const ALL=BANK.reduce((a,b)=>a+b)+DIRECT.reduce((a,b)=>a+b), BK=BANK.reduce((a,b)=>a+b), DR=ALL-BK, x0=L+PW, cx=x0+TW/2, tb=Math.min(46,TW-24), tsc=ph/ALL;
+  el(s,'path',{d:`M${x0+4} ${T-8} V${H-B}`,stroke:cv('--rule'),'stroke-dasharray':'2 5','stroke-width':1.5,'stroke-linecap':'round'});
+  el(s,'line',{x1:x0+10,x2:W-R,y1:T+ph,y2:T+ph,stroke:cv('--rule')});
+  bar(s,cx-tb/2,T,tb,DR*tsc,cv('--direct'));
+  bar(s,cx-tb/2,T+DR*tsc,tb,BK*tsc,cv('--river'),0);
+  el(s,'text',{x:cx,y:T-7,'text-anchor':'middle',class:'b','font-size':sm?11:13},m1(ALL));
+  el(s,'text',{x:cx,y:T+DR*tsc/2+4,'text-anchor':'middle',class:'b','font-size':11},m1(DR));
+  el(s,'text',{x:cx,y:T+DR*tsc+BK*tsc/2+4,'text-anchor':'middle','font-size':12,'font-weight':700,style:'fill:#fff'},m1(BK));
+  el(s,'text',{x:cx,y:H-8,'text-anchor':'middle',class:'b'},'Total');
+  // notes
+  const gx=i=>L+gw*(i+.5);
+  host.replaceChildren(s);
+}
+
+function drawSeg(){
+  const host=$('c-seg'), W=Math.max(300,host.clientWidth), sm=W<480, LW=sm?82:96, RW=sm?118:150, rows=SEG.length+1, rh=64, T=34, H=T+rows*rh+6, s=svg(W,H);
+  const BK=SEG.reduce((a,q)=>a+q.v,0), N=SEG.reduce((a,q)=>a+q.n,0), bw=v=>Math.max(3,(W-LW-RW)*v/BK);
+  const lab=(x,y,big,small)=>{el(s,'text',{x,y:y+13,class:'b','font-size':sm?13:14},big);el(s,'text',{x,y:y+30,class:'q','font-size':sm?11:12.5},small);};
+  SEG.forEach((q,j)=>{const y=T+j*rh+14, h=30;
+    el(s,'text',{x:0,y:y+h/2+5,'font-size':sm?12:13.5,'font-weight':600},q.name);
+    hbar(s,LW,y,bw(q.v),h,cv(q.c));
+    lab(LW+bw(q.v)+10,y,m1(q.v),`${q.n} loans, avg ${k1(q.v/q.n)}`);});
+  const y=T+SEG.length*rh+14, h=30; let x=LW;
+  el(s,'line',{x1:0,x2:W,y1:y-14,y2:y-14,stroke:cv('--rule')});
+  el(s,'text',{x:0,y:y+h/2+5,'font-size':sm?12:13.5,'font-weight':700},'All segments');
+  SEG.forEach((q,i)=>{const w=bw(q.v); if(i===SEG.length-1) hbar(s,x,y,w,h,cv(q.c)); else el(s,'rect',{x,y,width:w,height:h,fill:cv(q.c)}); x+=w;});
+  lab(x+10,y,m1(BK),`${N} loans, avg ${k1(BK/N)}`);
+  host.replaceChildren(s);
+}
+
+/* ---------- cost to SRL ---------- */
+const SEGS=['P','M','C'], SN={P:'Private',M:'Municipal',C:'Community'};
+function costs(){
+  const lent={}, g={}, inc={}; let LA=0;
+  SEGS.forEach(k=>{lent[k]=PLAN.n[k]*AVG[k]; LA+=lent[k]; g[k]=lent[k]*PLAN.guar[k]/100; inc[k]=lent[k]*PLAN.inc[k]/100;});
+  const G=SEGS.reduce((a,k)=>a+g[k],0), I=SEGS.reduce((a,k)=>a+inc[k],0), TB=PLAN.banks*PLAN.perBank, IL=LA*PLAN.iloss/100, TT=G+I+TB+IL;
+  return {lent,g,inc,LA,G,I,TB,IL,TT};
+}
+function buildCost(){
+  const c=costs(), pc=v=>`<span class="pct">${Math.round(v/c.TT*100)}%</span>`;
+  const cell=(k,v,p)=>v>0?`<td><b>${m1(v)}</b> total<small>${k1(AVG[k]*p/100)} per loan (${p}%)</small></td>`:'<td></td>';
+  $('h-cost').textContent=`What is the cost to disburse ${m1(c.LA)} over the next 12-18 months in the Lempa basin?`;
+  $('p-cost').textContent=`About ${m1(c.TT)} of SRL money, or ${Math.round(c.TT/c.LA*100)} cents for each dollar lent. Each SRL dollar moves about $${(c.LA/c.TT).toFixed(2)} of lending.`;
+  $('cap-cost').textContent=`Unused FLC funds will be recycled as FLC for new loans, so the actual leverage is expected to be higher than ${(c.LA/c.TT).toFixed(1)}x.`;
+  $('cost').innerHTML=`<thead><tr><th style="width:26%"></th>${SEGS.map(k=>`<th>${SN[k]}</th>`).join('')}<th class="tot">Total</th></tr></thead><tbody>
+    <tr class="vol"><th>Average loan size</th>${SEGS.map(k=>`<td>${k1(AVG[k])}</td>`).join('')}<td class="tot"></td></tr>
+    <tr class="vol"><th>Number of loans</th>${SEGS.map(k=>`<td>${PLAN.n[k]}</td>`).join('')}<td class="tot"><b>${SEGS.reduce((a,k)=>a+PLAN.n[k],0)}</b> loans</td></tr>
+    <tr class="vol"><th>Amount lent</th>${SEGS.map(k=>`<td>${m1(c.lent[k])}</td>`).join('')}<td class="tot"><b>${m1(c.LA)}</b></td></tr>
+    <tr><th>First loss cover (FLC) <span class="pg">(as collateral substitute)</span></th>${SEGS.map(k=>c.g[k]>0?cell(k,c.g[k],PLAN.guar[k]):'<td class="na">Not needed: private borrowers have collateral</td>').join('')}<td class="tot"><b>${m1(c.G)}</b>${pc(c.G)}</td></tr>
+    <tr><th>Financial incentives <span class="pg">(to increase deal flow)</span></th>${SEGS.map(k=>cell(k,c.inc[k],PLAN.inc[k])).join('')}<td class="tot"><b>${m1(c.I)}</b>${pc(c.I)}</td></tr>
+    <tr class="xh"><th colspan="5">Not split by segment</th></tr>
+    <tr><th>TA to banks <span class="pg">(for underwriting water sector loans)</span></th><td colspan="3"><b>${m1(c.TB)}</b> total<small>${k1(PLAN.perBank)} per bank, ${PLAN.banks} banks</small></td><td class="tot"><b>${m1(c.TB)}</b>${pc(c.TB)}</td></tr>
+    <tr><th>Interest income loss to ASC <span class="pg">(lower rate on amount lent)</span></th><td colspan="3"><b>${m1(c.IL)}</b> total<small>${PLAN.iloss}% of amount lent</small></td><td class="tot"><b>${m1(c.IL)}</b>${pc(c.IL)}</td></tr>
+    </tbody><tfoot>
+    <tr class="sum"><th>Total cost to SRL</th>${SEGS.map(k=>`<td>${m1(c.g[k]+c.inc[k])}</td>`).join('')}<td class="tot"><span class="grand">${m1(c.TT)}</span></td></tr>
+    <tr><th>Leverage <span class="pg">(amount lent ÷ cost)</span></th>${SEGS.map(k=>`<td>${(c.lent[k]/(c.g[k]+c.inc[k])).toFixed(1)}x</td>`).join('')}<td class="tot"><span class="grand">${(c.LA/c.TT).toFixed(1)}x</span></td></tr>
+    </tfoot>`;
+}
+function drawCost(){
+  const c=costs(), host=$('c-cost'), W=Math.max(300,host.clientWidth), sm=W<720, H=sm?250:140, s=svg(W,H), T=sm?36:40, h=38;
+  const parts=[['First loss cover (FLC)',c.G,'--mun'],['Financial incentives',c.I,'--pri'],['TA to banks',c.TB,'--com'],['Interest income loss to ASC',c.IL,'--direct']];
+  let x=0; const sc=W/c.TT;
+  parts.forEach(([n,v,col],i)=>{const w=v*sc;
+    if(i===0) el(s,'path',{d:`M5 ${T} H${w} V${T+h} H5 Q0 ${T+h} 0 ${T+h-5} V${T+5} Q0 ${T} 5 ${T} Z`,fill:cv(col)});
+    else if(i===parts.length-1) hbar(s,x,T,w,h,cv(col));
+    else el(s,'rect',{x,y:T,width:w,height:h,fill:cv(col)});
+    if(i<parts.length-1) el(s,'rect',{x:x+w-1,y:T,width:2,height:h,fill:cv('--paper')});
+    if(!sm){ const lx=i*W/4; el(s,'rect',{x:lx,y:T+h+14,width:12,height:12,rx:3,fill:cv(col)}); el(s,'text',{x:lx+18,y:T+h+25,class:'b','font-size':14},`${m1(v)}`); el(s,'text',{x:lx+18,y:T+h+43,class:'q','font-size':12.5},`${n}, ${Math.round(v/c.TT*100)}%`);}
+    else { const ly=T+h+28+i*42; el(s,'rect',{x:0,y:ly-11,width:12,height:12,rx:3,fill:cv(col)}); el(s,'text',{x:20,y:ly,class:'b','font-size':13},m1(v)); el(s,'text',{x:76,y:ly,class:'q','font-size':12},`${n}, ${Math.round(v/c.TT*100)}%`);}
+    x+=w;});
+  host.replaceChildren(s);
+}
+
+function drawAll(){drawYear();drawSeg();drawCost();}
+buildCost(); drawAll();
+let rt; addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(drawAll,120);});
+matchMedia('(prefers-color-scheme: dark)').addEventListener?.('change',drawAll);
+new MutationObserver(drawAll).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
+document.fonts&&document.fonts.ready.then(drawAll);
+</script>
+
+</body></html>
